@@ -129,7 +129,7 @@ plt.show()
 
 # Word cloud for real news
 real_data = data[data["target"] == "true"]
-all_words = ' '.join([text for text in fake_data.text])
+all_words = ' '.join([text for text in real_data.text])
 
 wordcloud = WordCloud(width= 800, height= 500,
                           max_font_size = 110,
